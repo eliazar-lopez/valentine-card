@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Valentine Surprise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    </head>
+  <body>
+
+  <div class="card">
+
+    <!-- ENVELOPE SCREEN -->
+    <section id="envelopePanel" class="panel show">
+      <p>💌 You got a special message!💌</p>
+      <img id="envelopeImg" src="envelope.png" alt="Envelope" />
+      <p style="font-size: 0.9rem;">Open me</p>
+    </section>
+
+
+    <!-- INTRO PANEL -->
+    <section id="intro" class="panel">
+      <button id="musicBtn">▶️ Play Music</button>
+      <input
+        type="range"
+        id="volumeSlider"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.5"
+      />
+      <audio id="song" src="Taylor Swift - Enchanted.mp3"></audio>
+      <h1>Hey Sabrina 👋</h1>
+      <p id="typewriter"></p>
+
+      <div class="timeline">
+        <p>✨ I'll never forget your Lux vs Milio battle ✨</p>
+        <p>🌟 Remember our 14 hour LoL session 🌟</p>
+        <p>💌 Always enjoy our 3-5AM yap sessions 💌</p>
+      </div>
+
+      <div class="lol-fight">
+        <div class="champ-wrap lux">
+          <img src="luxfight.png" class="champ" alt="Lux">
+        </div>
+
+        <div class="champ-wrap milio">
+          <img src="miliofight.png" class="champ" alt="Milio">
+        </div>
+
+        <div class="lux-ult"></div>
+      </div>
+
+
+      <button id="revealBtn">Click me</button>
+    </section>
+
+
+    <!-- QUESTION PANEL -->
+    <section id="questionPanel" class="panel">
+      <p><strong>Will you be my Valentine? 💌</strong></p>
+      <div class="choices">
+        <button id="yesBtn">Yes 💖</button>
+        <button id="noBtn">No 🙃</button>
+      </div>
+    </section>
+
+    <!-- YES PANEL -->
+    <section id="yesPanel" class="panel">
+      <h2>💖 It’s a YES 💖</h2>
+      <p id="yesTypewriter"></p>
+      <p>I'm so happy! Looking forward to more amazing moments together. 😊</p>
+      <p class="sweet-note">
+      I love playing with you — even when we lose 🤍  
+      <br>
+      And I’ll always enjoy yapping with you.
+      </p>
+
+    </section>
+
+  </div>
+
+  </body>
+  </html>
